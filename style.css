@@ -46,7 +46,8 @@ body{
     padding: 0px 0px ;
     text-align: center;
     border-radius: 20px;
-    background-color: antiquewhite;
+    background: linear-gradient(0deg, rgb(233, 233, 233) 0%, rgb(247, 222, 177) 100%);
+
 }
 h2{
     font-size: 3em;
@@ -69,7 +70,7 @@ h3{
     width: auto;
     height: auto;
     display: flex;
-    background-color: antiquewhite;
+    background: linear-gradient(0deg, rgb(233, 233, 233) 0%, rgb(247, 222, 177) 100%);
     border-radius: 40px;
 
 }
