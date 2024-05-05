@@ -1,5 +1,5 @@
 html{
-    height: 110%;
+    height: 150%;
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(74,74,173,1) 35%, rgba(122,193,208,1) 100%);
     background-size: cover;
 }
@@ -23,9 +23,9 @@ body{
     padding-bottom: 50px;
     @media (max-width:1023px) {
         scale: 2;  
-        padding-top: 200px;
+        padding-top: 300px;
         position: relative;
-        left: 300px;
+        left: 250px;
     };
     }
 
