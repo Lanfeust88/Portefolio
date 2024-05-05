@@ -2,10 +2,11 @@ html{
     height: 100%;
 }
 body{
-    min-height: 100%;
+    min-height: auto;
     width: 100%;
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(74,74,173,1) 35%, rgba(122,193,208,1) 100%);
-    background-size: 100%;
+    background-size: cover;
+    
 }
 
 #principale{
