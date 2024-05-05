@@ -1,5 +1,5 @@
 html{
-    height: 150%;
+    height: 110%;
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(74,74,173,1) 35%, rgba(122,193,208,1) 100%);
     background-size: cover;
 }
@@ -14,12 +14,6 @@ body{
     
     width: auto;
     height: auto;  
-    
-    @media (max-width:1023px) {
-        scale: 1.8;  
-        padding-top: 200px;
-    }
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,6 +21,12 @@ body{
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
+    @media (max-width:1023px) {
+        scale: 1.8;  
+        padding-top: 200px;
+        position: relative;
+        left: 350px;
+    };
     }
 
 .profil {
