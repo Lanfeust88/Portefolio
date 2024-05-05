@@ -11,20 +11,31 @@ body{
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: rows;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     }
-#profil{
+.profilmove {
     width: 400px;
     height: 400px;
     position: relative;
     background-image: url(images/img-cyril.jpg);
     border-radius: 200px;
     background-size: contain;
+    transform:  translateX(-200px);
+    transition: 2000ms;
+}
+.profil {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-image: url(images/img-cyril.jpg);
+    border-radius: 200px;
+    background-size: contain;
+    
 }
 #selection{
     width: 250px;
@@ -40,83 +51,195 @@ body{
     transform : scale(1.2);
     transition: 1000ms;
 }
-#texte{
-    width: auto;
-    height: auto;
-    padding: 0px 0px ;
-    text-align: center;
-    border-radius: 20px;
-    background: linear-gradient(0deg, rgb(233, 233, 233) 0%, rgb(247, 222, 177) 100%);
-
+#presentation{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 400px;
+        text-align: center;
+        
 }
 h2{
     font-size: 3em;
+    margin-top: 0px;
     margin-bottom: -20px;
-    color: darkslategray;
+    color: rgb(255, 255, 255);
 }
 h3{
     font-size: 1.5em ;
     font-style: italic;
-    color: darkslategray;
+    color: rgb(251, 253, 253);
 }
-#contenu{
-    width: 600px;
-    height: 400px;
-    position: relative;  
+#presentation p {
+    
+    color: rgb(251, 253, 253);
 }
-
-
-#portefolio{
-    width: auto;
-    height: auto;
+.imagewp {
+    scale: 0;
+    width: 100px;
+    height: 100px;
     display: flex;
-    background: linear-gradient(0deg, rgb(233, 233, 233) 0%, rgb(247, 222, 177) 100%);
-    border-radius: 40px;
-
+    flex-direction: column;
+    margin: 10px;
+    bottom: 80px;
+    left: 450px;
+    border-radius: 90px;
+    
 }
-#wordpress2{
-    position: relative;
+.wordpressimgmove {
+    transform: scale(1);
+    transition: 1000ms;
+    width: 100px;
+    height: 100px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: auto;
-    text-align: center;
-
- 
+    flex-direction: column;
+    margin: 30px;
+    bottom: 100px;
+    left: 450px;
+    border-radius: 90px;
+    
 }
-#wordpress2 img{
-    display: inline-block;
+
+.javascriptimgmove {
+    transform: scale(1);
+    transition: 1000ms;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    bottom: 250px;
+    left: 450px;
+    border-radius: 90px;
+    
+}
+.javascriptimgmove2 {
+    transform: scale(1);
+    transition: 1000ms;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    bottom: 50px;
+    left: 450px;
+    border-radius: 90px;
+    
+}
+#univ{
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    top: 10px;
-    border: 3px;
-    border-color: darkslategray;
-    border-style: solid;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
+
+   
+}
+#univ:hover{
+    scale: 1.4;
+    transition: 1000ms;
+    border-width: 8px;
+    border: solid whitesmoke;
+    
+}
+#mars{
+    position: relative;
 
 }
-#javascript{
-    position: relative;
+#mars:hover{
+    scale: 1.4;
+    transition: 1000ms;
+    border-width: 8px;
+    border: solid whitesmoke;
+
+}
+@keyframes monanim {
+    0% {
+        transform: scale(0)
+    }
+    100% {
+        transform: scale(1)
+    }
+    ;
+}
+
+#textuniv {
+    position: absolute;
     width: 300px;
+    height: auto;
+    top: 80px;
+    left: 630px;
     text-align: center;
- 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+    animation: monanim ;
+    animation-duration: 1000ms;
+    background-color: whitesmoke;
 }
-#javascript img{
-    display: inline-block;
+#textuniv h3{
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: 10px;
-    border: 3px;
-    border-color: darkslategray;
-    border-style: solid;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
+    margin-top: -30px;
+    color: darkslategray;
+    top: 30px;
+}
+#textuniv p{
+    text-align: justify;
+}
+#textmars {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 80px;
+    left: 630px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+    animation: monanim ;
+    animation-duration: 1000ms;
+    background-color: whitesmoke;
+}
+#textmars h3{
+    position: relative;
+    margin-top: -30px;
+    color: darkslategray;
+    top: 30px;
+}
+#textmars p{
+    text-align: justify;
+}
+#bits{
+    position: relative;
 
+   
+}
+#bits:hover{
+    scale: 1.4;
+    transition: 1000ms;
+    border-width: 8px;
+    border: solid whitesmoke;
+    
+}
+#textbits {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 80px;
+    left: 630px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+    animation: monanim ;
+    animation-duration: 1000ms;
+    background-color: whitesmoke;
+}
+#textbits h3{
+    position: relative;
+    margin-top: -30px;
+    color: darkslategray;
+    top: 30px;
+}
+#textbits p{
+    text-align: justify;
 }

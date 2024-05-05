@@ -8,41 +8,41 @@
     </head>
     <body>
         <main id="principale">
-            <section name="selecteur" id="profil">
+            
+            <section name="selecteur" class="profil" id="profil">
                 <select name="codes" id="selection" onchange="portefolio()" >
                     <option value="">Quel Portefolio visualiser ?</option>
                     <option value="wordpress">Mes projets Wordpress</option>
                     <option value="javascript">Projets en JS</option>
                 </select>
-            </section>
-            <section id="contenu">
-                <div id="texte">
+                <section id="presentation">
                     <h2>Cyril Plou</h2>
                     <h3>Recherche Alternance Dev. Web</h3>
                     <p>Découvrez ces quelques projets réalisés pour le plaisir.</p>
-
-                </div>
-                <div id="portefolio">
-                    <section id="wordpress2">
-                        <div>
-                            <img src="images/univ.png">
-                            <h4>Plateforme Universarium</h4>
-                            <p>Création wordpress d'une plateforme elearning. Modification du thème et de plusieurs plugins.</p>
-                        </div>
-                        <div>
-                            <img src="images/univ.png">
-                            <h4>Plateforme Universarium</h4>
-                            <p>Création wordpress d'une plateforme elearning. Modification du thème et de plusieurs plugins.</p>
-                        </div>
-                        
-                    </section>
-                    <section id="javascript">
-                        <img src="images/univ.png">
-                        <h4>Javascript</h4>
-                        <p>Création wordpress d'une plateforme elearning. Modifi</p>
-                    </section>
-                </div>
+                </section>  
+                <section id="wordpress">
+                    <a href="http://www.universarium.fr" target="_blank"><img class="imagewp" id="univ" src="images/univ.png"></a>
+                    <div id="textuniv">
+                        <h3>Plateforme e-learning Universarium</h3>
+                        <p>Universarium est une plateforme e-learning, créée afin de partager avec les plus jeunes, ma passion de l'univers. Cette plateforme a été créée à partir d'un thème et de plusieurs plugins que je suis par la suite allé modifier afn que le Design du site corresponde à mes attente.</p>
+                    </div>
+                    <a href="http://www.missionaurora.fr" target="_blank"><img class="imagewp" id="mars" src="images/mars.png"></a>
+                    <div id="textmars">
+                        <h3>Vitrine Podcast SF</h3>
+                        <p>Universarium est une plateforme e-learning, créée afin de partager avec les plus jeunes, ma passion de l'univers. Cette plateforme a été créée à partir d'un thème et de plusieurs plugins que je suis par la suite allé modifier afn que le Design du site corresponde à mes attente.</p>
+                    </div>
+                </section>
+                <section id="javascript">
+                    <a href="http://www.missionaurora.fr" target="_blank"><img class="imagewp" id="bits" src="images/8bits.png"></a>
+                    <div id="textbits">
+                        <h3>Un projet 8 bits</h3>
+                        <p>Universarium est une plateforme e-learning, créée afin de partager avec les plus jeunes, ma passion de l'univers. Cette plateforme a été créée à partir d'un thème et de plusieurs plugins que je suis par la suite allé modifier afn que le Design du site corresponde à mes attente.</p>
+                    </div>
+                </section>
+                
+                
             </section>
+               
         </main>
         
 
