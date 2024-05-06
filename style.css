@@ -306,7 +306,7 @@ h3{
 
 /* pour les mobiles ci-dessous*/
 
-@media (max-width:1024px){
+@media (max-width:1000px){
 
     #wordpress{
         display: flex;
@@ -317,10 +317,11 @@ h3{
 
     .imagewp {
         scale: 0;
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 180px;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         margin: 10px;
         bottom: 80px;
         left: 450px;
@@ -330,11 +331,14 @@ h3{
     .wordpressimgmove {
         transform: scale(1);
         transition: 1000ms;
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 180px;
         display: flex;
         flex-direction: row;
+        padding: 0px 20px;
+        justify-content: space-around;
         margin-top: 30px;
+        left: -100px;
         top: 400px;
         
         border-radius: 5px;
@@ -344,8 +348,8 @@ h3{
     .javascriptimgmove {
         transform: scale(1);
         transition: 1000ms;
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 180px;
         display: flex;
         flex-direction: row;
         margin: 30px;
@@ -357,8 +361,8 @@ h3{
     .javascriptimgmove2 {
         transform: scale(1);
         transition: 1000ms;
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 180px;
         display: flex;
         flex-direction: row;
         margin: 30px;
