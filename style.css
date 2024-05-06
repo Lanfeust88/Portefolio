@@ -1,17 +1,15 @@
 html{
-    height: 150%;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(74,74,173,1) 35%, rgba(122,193,208,1) 100%);
+    height: auto;
+    width: auto;
+   /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(74,74,173,1) 35%, rgba(122,193,208,1) 100%); */
+   background-image: url(images/bg-portefolio.png);
     background-size: cover;
 }
 body{
     min-height: 100%;
-    width: 100%;
-    
-    
+    width: 100%;   
 }
-
-#principale{
-    
+#principale{ 
     width: auto;
     height: auto;  
     display: flex;
@@ -21,6 +19,7 @@ body{
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
+
     @media (max-width:1023px) {
         scale: 2;  
         padding-top: 300px;
@@ -28,7 +27,28 @@ body{
         left: 250px;
     };
     }
+#social{
+    width: 50px;
+    position: relative;
+    top: 300px;
+    left: 330px;
+}
+#social:hover{
+    transform: scale(1.4);
+    transition: 1000ms;
 
+}
+#github{
+    width: 50px;
+    position: relative;
+    top: 230px;
+    left: 310px;
+}
+#github:hover{
+    transform: scale(1.4);
+    transition: 1000ms;
+
+}
 .profil {
     width: 400px;
     height: 400px;
@@ -69,12 +89,18 @@ h2{
 h3{
     font-size: 1.5em ;
     font-style: italic;
-    color: rgb(251, 253, 253);
+    color: rgb(241, 188, 74);
 }
 #presentation p {
-    
-    color: rgb(251, 253, 253);
+    position: relative;
+    left: -50px;
+    font-size: 18px;
+    width: 500px;
+    margin-top: -10px;
+    text-align: justify;
+    color: rgb(250, 186, 91);
 }
+
 /* Responsive pour ordinateur. Partie mobile plus bas */
 .profilmove {
     width: 400px;
@@ -84,7 +110,7 @@ h3{
     border-radius: 200px;
     background-size: contain;
     @media (min-width:1024px) {
-        transform:  translateX(-200px);
+        transform:  translateX(-300px);
         transition: 2000ms;  
     }
     
@@ -95,51 +121,54 @@ h3{
         width: 100px;
         height: 100px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 10px;
         bottom: 80px;
         left: 450px;
-        border-radius: 90px;
+       /* border-radius: 90px;*/
         
+    }
+    #wordpress{
+        display: flex;
     }
     .wordpressimgmove {
         transform: scale(1);
         transition: 1000ms;
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 180px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 30px;
-        bottom: 100px;
+        bottom: 150px;
         left: 450px;
-        border-radius: 90px;
+        border-radius: 5px;
         
     }
     
     .javascriptimgmove {
         transform: scale(1);
         transition: 1000ms;
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 180px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 30px;
-        bottom: 250px;
-        left: 450px;
-        border-radius: 90px;
+        bottom: 300px;
+        left: 600px;
+        border-radius: 5px;
         
     }
     .javascriptimgmove2 {
         transform: scale(1);
         transition: 1000ms;
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 180px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 30px;
-        bottom: 50px;
-        left: 450px;
-        border-radius: 90px;
+        bottom: 150px;
+        left: 600px;
+        border-radius: 5px;
         
     }
     #univ{
@@ -151,6 +180,9 @@ h3{
         scale: 1.4;
         transition: 1000ms;
         border-width: 8px;
+        transform: translateX(110px);
+        z-index: 1;
+
         border: solid whitesmoke;
         
     }
@@ -160,6 +192,7 @@ h3{
     }
     #mars:hover{
         scale: 1.4;
+        transform: translateX(-110px);
         transition: 1000ms;
         border-width: 8px;
         border: solid whitesmoke;
@@ -177,10 +210,11 @@ h3{
     
     #textuniv {
         position: absolute;
-        width: 300px;
+        width: 500px;
         height: auto;
-        top: 80px;
-        left: 630px;
+        z-index: 3;
+        top: 350px;
+        left: 500px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -201,10 +235,10 @@ h3{
     }
     #textmars {
         position: absolute;
-        width: 300px;
+        width: 500px;
         height: auto;
-        top: 80px;
-        left: 630px;
+        top: 350px;
+        left: 500px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -237,10 +271,10 @@ h3{
     }
     #textbits {
         position: absolute;
-        width: 300px;
+        width: 500px;
         height: auto;
-        top: 80px;
-        left: 630px;
+        top: 350px;
+        left: 500px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -257,6 +291,7 @@ h3{
         top: 30px;
     }
     #textbits p{
+        margin-top: -20px;
         text-align: justify;
     }
 }
@@ -281,7 +316,7 @@ h3{
         margin: 10px;
         bottom: 80px;
         left: 450px;
-        border-radius: 90px;
+        border-radius: 5px;
         
     }
     .wordpressimgmove {
@@ -294,7 +329,7 @@ h3{
         margin-top: 30px;
         top: 400px;
         
-        border-radius: 90px;
+        border-radius: 5px;
         
     }
     
