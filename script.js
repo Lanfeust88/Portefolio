@@ -5,6 +5,7 @@ let imageuniv = document.getElementById("univ");
 let imagemars = document.getElementById("mars");
 let image8bits = document.getElementById("bits");
 let javascript = document.getElementById("javascript");
+let zonemobile = document.getElementById("promptmobile")
 javascript.style.display="none";
 let textuniv = document.getElementById("textuniv");
 textuniv.style.display="none";
@@ -12,6 +13,10 @@ let textmars = document.getElementById("textmars");
 textmars.style.display="none";
 textbits.style.display="none";
 
+function closemobile(){
+    zonemobile.style.display= "none";
+
+}
 imageuniv.addEventListener(("mouseenter"), (event)=>{
     textuniv.style.display='';
     imageuniv.addEventListener(("mouseout"), (event)=>{
