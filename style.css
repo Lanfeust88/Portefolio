@@ -25,7 +25,7 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 130px;
     padding-bottom: 50px;
 
     @media (max-width:1023px) {
@@ -101,6 +101,19 @@ h3{
     font-size: 1.5em ;
     font-style: italic;
     color: rgb(241, 188, 74);
+}
+h3 button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+}
+h3 button:hover {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
 }
 #presentation p {
     position: relative;
