@@ -125,6 +125,12 @@ h3{
     
 }
 @media (min-width:1024px){
+    #textunivmobile{
+        display: none;
+    }
+    #textmarsmobile{
+        display: none;
+    }
     #promptmobile{
         display: none;
     }
@@ -312,13 +318,15 @@ h3{
 
 @media (max-width:1000px){
 #promptmobile{
-    display: '';
+    
     z-index: 4;
     width: 200px;
-    height: 100px;
+    height: 150px;
     transform: scale(2);
+    display: flex;
+    flex-direction: column;
     transition-duration:  1000ms;
-    top: 100px;
+    top: 200px;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -326,6 +334,9 @@ h3{
     padding: 10px;
     background-color: antiquewhite;
     border-radius: 20px;
+}
+#promptmobile button{
+    margin-top: 5px;
 }
     #wordpress{
         display: flex;
@@ -396,10 +407,7 @@ h3{
        
     }
     #univ:hover{
-        scale: 1.4;
-        transition: 1000ms;
-        border-width: 8px;
-        border: solid whitesmoke;
+        position: relative;
         
     }
     #mars{
@@ -407,10 +415,7 @@ h3{
     
     }
     #mars:hover{
-        scale: 1.4;
-        transition: 1000ms;
-        border-width: 8px;
-        border: solid whitesmoke;
+        position: relative;
     
     }
     @keyframes monanim {
@@ -423,20 +428,32 @@ h3{
         ;
     }
     
-    #textuniv {
+    #textunivmobile {
         position: absolute;
         scale: 1.3;
-        width: 400px;
+        width: 200px;
         height: auto;
-        top: 800px;
-        left: 0px;
+        top: 950px;
+        left: -70px;
         text-align: center;
         display: flex;
         flex-direction: column;
         padding: 10px;
         border-radius: 30px;
-        animation: monanim ;
-        animation-duration: 1000ms;
+        background-color: whitesmoke;
+    }
+    #textmarsmobile {
+        position: absolute;
+        scale: 1.3;
+        width: 200px;
+        height: auto;
+        top: 940px;
+        left: 240px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 30px;
         background-color: whitesmoke;
     }
     #textuniv h3{
@@ -448,22 +465,7 @@ h3{
     #textuniv p{
         text-align: justify;
     }
-    #textmars {
-        position: absolute;
-        scale: 1.3;
-        width: 400px;
-        height: auto;
-        top: 800px;
-        left: 0px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 30px;
-        animation: monanim ;
-        animation-duration: 1000ms;
-        background-color: whitesmoke;
-    }
+   
     #textmars h3{
         position: relative;
         margin-top: -30px;

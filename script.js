@@ -8,10 +8,15 @@ let javascript = document.getElementById("javascript");
 let zonemobile = document.getElementById("promptmobile")
 javascript.style.display="none";
 let textuniv = document.getElementById("textuniv");
+let textunivmobile = document.getElementById("textunivmobile");
+let textmarsmobile = document.getElementById("textmarsmobile");
 textuniv.style.display="none";
 let textmars = document.getElementById("textmars");
 textmars.style.display="none";
 textbits.style.display="none";
+textunivmobile.style.display="none";
+textmarsmobile.style.display="none";
+
 
 function closemobile(){
     zonemobile.style.display= "none";
@@ -45,6 +50,9 @@ let choix = selec.value;
     main.classList.replace("profil","profilmove");
     imageuniv.classList.replace("imagewp","wordpressimgmove");
     imagemars.classList.replace("imagewp","wordpressimgmove");
+    textunivmobile.style.display='';
+    textmarsmobile.style.display='';
+
 
     }
     else{
@@ -61,6 +69,8 @@ let choix = selec.value;
             contenuwordpress.style.display='';
             javascript.style.display="none";
             main.classList.replace("profil","profilmove");
+            textunivmobile.style.display='';
+            textmarsmobile.style.display='';
 
             }
             else{
