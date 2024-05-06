@@ -40,10 +40,12 @@ body{
     position: relative;
     top: 300px;
     left: 330px;
+
 }
 #social:hover{
     transform: scale(1.4);
     transition: 1000ms;
+
 
 }
 #github{
@@ -51,6 +53,7 @@ body{
     position: relative;
     top: 230px;
     left: 310px;
+
 }
 #github:hover{
     transform: scale(1.4);
@@ -191,6 +194,8 @@ h3{
     }
     #univ{
         position: relative;
+        box-shadow: 5px 5px 10px black;
+
     
        
     }
@@ -200,12 +205,15 @@ h3{
         border-width: 8px;
         transform: translateX(110px);
         z-index: 1;
+        box-shadow: 10px 10px 40px black;
 
         border: solid whitesmoke;
         
     }
     #mars{
         position: relative;
+        box-shadow: 5px 5px 10px black;
+
     
     }
     #mars:hover{
@@ -214,6 +222,8 @@ h3{
         transition: 1000ms;
         border-width: 8px;
         border: solid whitesmoke;
+        box-shadow: 10px 10px 40px black;
+
     
     }
     @keyframes monanim {
@@ -241,6 +251,8 @@ h3{
         animation: monanim ;
         animation-duration: 1000ms;
         background-color: whitesmoke;
+        box-shadow: 5px 5px 10px black;
+
     }
     #textuniv h3{
         position: relative;
@@ -265,6 +277,8 @@ h3{
         animation: monanim ;
         animation-duration: 1000ms;
         background-color: whitesmoke;
+        box-shadow: 5px 5px 10px black;
+
     }
     #textmars h3{
         position: relative;
@@ -277,6 +291,8 @@ h3{
     }
     #bits{
         position: relative;
+        box-shadow: 5px 5px 10px black;
+
     
        
     }
@@ -284,6 +300,7 @@ h3{
         scale: 1.4;
         transition: 1000ms;
         border-width: 8px;
+        box-shadow: 10px 10px 40px black;
         border: solid whitesmoke;
         
     }
@@ -301,6 +318,8 @@ h3{
         animation: monanim ;
         animation-duration: 1000ms;
         background-color: whitesmoke;
+        box-shadow: 5px 5px 10px black;
+
     }
     #textbits h3{
         position: relative;
