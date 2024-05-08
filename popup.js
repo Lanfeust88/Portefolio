@@ -1,8 +1,8 @@
 let body = document.getElementById("body");
 let divpop = document.createElement("div");
 divpop.classList.add("divpopup");
-let bullecyril = document.createElement("img");
-bullecyril.src="https://github.com/Lanfeust88/Portefolio/blob/main/images/bullecyril.png" ;
+let bullecyril = new Image(100,100);
+bullecyril.src="images/bullecyril.png" ;
 divpop.appendChild(bullecyril);
 let bgpopup = document.createElement("div");
 bgpopup.classList.add("bgpopup");
