@@ -4,6 +4,7 @@ html{
     width: auto;
     background-image: url(images/bg-portefolio.png);
     background-size: cover;
+    
     }
     @media (max-width: 999px) {
         height: auto;
@@ -418,9 +419,9 @@ h3 button:hover {
         display: flex;
         flex-direction: row;
         margin: 30px;
-        bottom: 250px;
-        left: 450px;
-        border-radius: 90px;
+        top: 400px;
+        left: 30px;
+        border-radius: 5px;
         
     }
     .javascriptimgmove2 {
