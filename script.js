@@ -10,13 +10,14 @@ javascript.style.display="none";
 let textuniv = document.getElementById("textuniv");
 let textunivmobile = document.getElementById("textunivmobile");
 let textmarsmobile = document.getElementById("textmarsmobile");
+let textbitsmobile = document.getElementById("textbitsmobile");
 textuniv.style.display="none";
 let textmars = document.getElementById("textmars");
 textmars.style.display="none";
 textbits.style.display="none";
 textunivmobile.style.display="none";
 textmarsmobile.style.display="none";
-
+textbitsmobile.style.display="none";
 
 function closemobile(){
     zonemobile.style.display= "none";
@@ -59,6 +60,7 @@ let choix = selec.value;
         javascript.style.display='';
         main.classList.replace("profil","profilmove");
         image8bits.classList.replace("imagewp","javascriptimgmove");
+        textbitsmobile.style.display='';
 
     }
 
