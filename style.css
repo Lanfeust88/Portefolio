@@ -547,3 +547,60 @@ h3 button:hover {
         text-align: justify;
     }
 }
+@keyframes bulle{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.bulle {
+    animation: bulle ;
+    animation-duration: 1000ms;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    bottom: 30px;
+    border-radius: 90px;
+    color: rgb(21, 46, 100);
+    background-color: rgb(255, 255, 255);
+}
+.bulle1 {
+    animation: bulle ;
+    animation-duration: 1000ms;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -50px;
+    bottom: 150px;
+    border-radius: 90px;
+    color: rgb(21, 46, 100);
+    background-color: rgb(255, 255, 255);
+}
+.bulle2 {
+    animation: bulle ;
+    animation-duration: 1000ms;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -10px;
+    bottom: 270px;
+    border-radius: 90px;
+    color: rgb(21, 46, 100);
+    background-color: rgb(255, 255, 255);
+}
+

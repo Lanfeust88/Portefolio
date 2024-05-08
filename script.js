@@ -19,6 +19,22 @@ textunivmobile.style.display="none";
 textmarsmobile.style.display="none";
 textbitsmobile.style.display="none";
 
+let lieu = document.createElement("h4");
+lieu.classList.add("bulle");
+lieu.textContent=("Lyon et sa métropole");
+let temps = document.createElement("h4");
+temps.classList.add("bulle1");
+temps.textContent=("A partir de fin septembre");
+let duree = document.createElement("h4");
+duree.classList.add("bulle2");
+duree.textContent=("Pour 12 mois environ");
+
+function info (){
+    setTimeout(function time (){main.appendChild(lieu)},500);
+    setTimeout(function time (){main.appendChild(temps)},1000);
+    setTimeout(function time (){main.appendChild(duree)},1500);
+}
+
 function closemobile(){
     zonemobile.style.display= "none";
 
