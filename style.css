@@ -604,3 +604,59 @@ h3 button:hover {
     background-color: rgb(255, 255, 255);
 }
 
+@keyframes  popup{
+    0%{
+        scale: 0;
+    }
+    100%{scale: 1;}
+}
+
+.divpopup{
+    position: absolute;
+    animation-name: popup;
+    animation-duration: 500ms;
+    float: left;
+    left: 550px;
+    top: 200px;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(118, 158, 218);
+    z-index: 6;
+}
+.boutonclose{
+    position: relative;
+    float: left;
+    top: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.boutonclose:hover{
+    background-color: rgb(245, 190, 11);
+    color: white;
+}
+.boutontalk{
+    position: relative;
+    float: right;
+    top: 130px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.boutontalk:hover{
+    scale: 1.1;
+    background-color: rgb(11, 245, 89);
+    font-weight: bold;
+    color: white;
+}
+.divpopup img{
+    position: absolute;
+}
+.bgpopup{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    opacity: 0.3;
+}
