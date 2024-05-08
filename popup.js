@@ -25,4 +25,4 @@ divpop.appendChild(talk)
 
 setTimeout(function ouverture(){
     body.appendChild(bgpopup);
-    body.appendChild(divpop);},60000)
+    body.appendChild(divpop);},300)
