@@ -112,6 +112,7 @@ h3 button {
 h3 button:hover {
     background-color: orange;
     color: white;
+    scale: 1.2;
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
@@ -142,6 +143,20 @@ h3 button:hover {
     
 }
 @media (min-width:1024px){
+    .divpopup{
+        position: absolute;
+        animation-name: popup;
+        animation-duration: 500ms;
+        float: left;
+        left: 550px;
+        top: 200px;
+        width: 300px;
+        height: 200px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px black;
+        background-color: rgb(118, 158, 218);
+        z-index: 6;
+    }
     #textunivmobile{
         display: none;
     }
@@ -611,20 +626,7 @@ h3 button:hover {
     100%{scale: 1;}
 }
 
-.divpopup{
-    position: absolute;
-    animation-name: popup;
-    animation-duration: 500ms;
-    float: left;
-    left: 550px;
-    top: 200px;
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 10px black;
-    background-color: rgb(118, 158, 218);
-    z-index: 6;
-}
+
 .boutonclose{
     position: relative;
     float: left;
