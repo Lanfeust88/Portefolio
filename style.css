@@ -154,7 +154,7 @@ h3 button:hover {
         height: 200px;
         border-radius: 50px;
         box-shadow: 5px 5px 10px black;
-        background-color: rgb(118, 158, 218);
+        background-color: rgb(70, 98, 139);
         z-index: 6;
     }
     #textunivmobile{
@@ -235,7 +235,7 @@ h3 button:hover {
         scale: 1.4;
         transition: 1000ms;
         border-width: 8px;
-        transform: translateX(110px);
+        transform: translateX(80px);
         z-index: 1;
         box-shadow: 10px 10px 40px black;
 
@@ -250,7 +250,7 @@ h3 button:hover {
     }
     #mars:hover{
         scale: 1.4;
-        transform: translateX(-110px);
+        transform: translateX(-80px);
         transition: 1000ms;
         border-width: 8px;
         border: solid whitesmoke;
@@ -274,7 +274,7 @@ h3 button:hover {
         height: auto;
         z-index: 3;
         top: 350px;
-        left: 500px;
+        left: 450px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -300,7 +300,7 @@ h3 button:hover {
         width: 500px;
         height: auto;
         top: 350px;
-        left: 500px;
+        left: 560px;
         text-align: center;
         display: flex;
         flex-direction: column;
